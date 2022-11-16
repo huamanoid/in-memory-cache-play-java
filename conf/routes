@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                           controllers.StudentController.listStudents()
+GET     /:id                        controllers.StudentController.retrieve(id:String)
+POST    /                           controllers.StudentController.create(request: Request)
+PUT     /:id                        controllers.StudentController.update(id:String, request: Request)
+DELETE  /:id                        controllers.StudentController.delete(id:String)
+DELETE  /                           controllers.StudentController.deleteAll()
